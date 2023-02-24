@@ -10,8 +10,6 @@
 *   Assignment: PA2
 */
 
-
-
 #include <iostream>
 #include <string>
 #include <cmath>
