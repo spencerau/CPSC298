@@ -2,3 +2,5 @@
 PA2/test
 InClass/branch
 PA3/test
+*.plist
+PA3/test.dSYM/Contents/Resources/DWARF/test

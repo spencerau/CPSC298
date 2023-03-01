@@ -1,4 +1,16 @@
-
+/*
+* Authenticator Program
+* Prompts for 3 char values
+* Checks if it matches a hardcoded code of ECA
+* Checks individual chars, total string, and also checksum of ASCII values
+*
+* @author: Spencer Au
+*   Email: spau@chapman.edu
+*   Student ID: 2385256
+*   Date: 2/20/23
+*   Class: CPSC 298
+*   Assignment: PA3
+*/
 
 #include <stdlib.h>
 #include <stdio.h>
