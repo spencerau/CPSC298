@@ -4,3 +4,12 @@ InClass/branch
 PA3/test
 *.plist
 PA3/test.dSYM/Contents/Resources/DWARF/test
+.DS_Store
+InClass/branch.dSYM/Contents/Resources/DWARF/branch
+.DS_Store
+InClass/loop
+InClass/loop.dSYM/Contents/Resources/DWARF/loop
+PA4/part1
+PA4/part1.dSYM/Contents/Resources/DWARF/part1
+PA4/part2
+PA4/part2.dSYM/Contents/Resources/DWARF/part2

@@ -4,7 +4,6 @@
 using namespace std;
 
 int main() {
-
     string strChoice = "Blue";
     string strOutcome;
     int flag = 0;
@@ -21,7 +20,6 @@ int main() {
 
     if (flag) cout << "Rabbit" << endl;
     else cout << "Believe" << endl;
-
 
     return 0;
 }
