@@ -51,6 +51,11 @@ void TicTacToe::playGame() {
             continueGame = false;
         }
     }
+    // deallocate memory
+    for (int i = 0; i < 3; i++) {
+        delete [] board[i];
+    }
+    delete [] board;
 }
 
 // checkResult() - checks if the game is over
@@ -183,18 +188,36 @@ void TicTacToe::computerMove() {
 
     }
     // check to see if there is a spot that lets the computer win
+    // choose random
+    else {
+        while (true) {
+            int row = rand() % 3;
+            int col = rand() % 3;
+            if (board[row][col] == '~') {
+                board[row][col] = 'O';
+                return;
+            }
+        }
+    }
+    /*
     else if (turn >= 2) {
         checkComputerWin();
     }
     // block the player from winning; either symmetric or block 3 in a row
     else {
-        checkComputerBlock();
+        // do a random number
+        int row = rand() % 3;
+        int col = rand() % 3;
+        board[row][col] = 'O';
+        //checkComputerBlock();
     }
+    */
 }
 
 // checkComputerWin() - checks if the computer can win
 void TicTacToe::checkComputerWin() {
     // check rows
+    // also check the space isn't taken
     for (int i = 0; i < 3; i++) {
         if (board[i][0] == board[i][1] && board[i][2] == '~' && board[i][0] == 'O') {
             board[i][2] = 'O';
@@ -322,4 +345,9 @@ void TicTacToe::checkComputerBlock() {
         board[0][1] = 'O';
         return;
     }
+    // else make a random move
+    int randRow = rand() % 3;
+    int randCol = rand() % 3;
+    board[randRow][randCol] = 'O';
+    return;
 }
