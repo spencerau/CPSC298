@@ -25,6 +25,11 @@ void TicTacToe::playGame() {
     bool continueGame = true;
     while (continueGame) {
         while (!gameover) {
+            
+            if (turn == 9) {
+                printf("Tie!\n");
+                break;
+            }
             printBoard();
             playerMove();
             gameover = checkResult();
@@ -35,6 +40,10 @@ void TicTacToe::playGame() {
             printBoard();
             computerMove();
             turn++;
+            if (turn == 9) {
+                printf("Tie!\n");
+                break;
+            }
             gameover = checkResult();
             if (gameover) {
                 printf("Computer wins!\n");
