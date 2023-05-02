@@ -22,10 +22,7 @@ int main() {
         cout << "Perimeter: " << shapes[i]->perimeter() << endl;
     }
 
-    // free memory via delete
-
+    //deallocate shape objects
     delete r;
     delete c;
-    
-
 }
