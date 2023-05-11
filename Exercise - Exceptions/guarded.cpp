@@ -24,9 +24,6 @@ void Device::enable()
 
 void Device::activate()
 {
-    
-    // Simulate activing the device.
-    // TODO: Replace this with a try catch block
     try {
         if (m_bEnabled == false)
     {
@@ -36,13 +33,11 @@ void Device::activate()
 
     } catch (runtime_error ex) {
         cout << ex.what() << endl;
-    }
-
-        
+    }   
     return;
 }
 
-int main(int argc, const char * argv[]) {
+int main() {
     Device device;
     device.enable();
     device.activate();
